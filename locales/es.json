@@ -1,0 +1,33 @@
+{
+    "hello": "Hola, soy {name}...",
+    "language": "Language",
+    "contact": "Contáctame",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "read_more": "Read More",
+    "osteopathy": "osteopatía",
+    "menu": {
+        "home": "home",
+        "treatments": "tratamientos",
+        "osteopathy": "osteopatía",
+        "massages": "massages",
+        "annachiara": "annachiara",
+        "contact": "contacto",
+        "language": "language",
+        "pediatric": "osteopatía pediátrica",
+        "geriatric": "osteopatía geriátrica"
+    },
+    "home": {
+        "welcome": "Osteo Spot es mi espacio de bienestar y recuperacion fisica y emocional donde  entento dar un servicio de calidad a personas que buscan un osteópata en Palma y necesitan una ayuda personalizada, completa, y eficaz, además de un trato exclusivo.",
+        "expert_title": "SOY EXPERTA EN OSTEOPATÍA",
+        "expert_paragraph_1": "Soy especialista en osteopatía estructural, fascial, visceral, y sacro craneal y soy a sosten del tratamiento manual. Mi técnica reduce el dolor y promueve un bienestar general, renueva la vitalidad y ayuda a mantener una buena homeostasis del organismo.",
+        "expert_paragraph_2": "El tratamiento osteopático tiene como objetivo identificar y eliminar las disfunciones de los tejidos que alteran la movilidad normal de las diversas partes del cuerpo, restaurando así su correcta funcionalidad y favoreciendo la curación de los trastornos y condiciones dolorosas.",
+        "reason": "El organismo es una unidad indivisible, que realiza diversas funciones gracias al trabajo conjunto de sus distintas partes. En el caso de existir un trastorno funcional de alguna de éstas, la reacción en cadena de las estructuras que se relacionan con ella resulta inevitable. Esta interdependencia lleva al osteópata a buscar desarreglos a distancia.",
+        "history_brief": "La Medicina osteopática se da a conocer en 1874, tras décadas de estudio e investigación del Dr. A.T. Still, médico de iniciación alopática, que dedicó su vida a integrar una nueva corriente terapéutica basada en la estimulación de los sistemas curativos que posee el propio cuerpo.",
+        "history_title": "Realidad histórica",
+        "copyright": "&copy; Annachiara Villa 2023",
+        "made_by": "Built by <a href='https://mixapolis.com' rel='nofollow' target='_blank'><strong>Jay</strong></a>"
+    }
+}
