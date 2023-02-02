@@ -24,7 +24,8 @@ export default defineNuxtConfig({
             ],
             link: [
                 { rel: 'stylesheet', href: 'css/all.min.css' },
-                { rel: 'stylesheet', href: 'css/tooplate-style.css' }
+                { rel: 'stylesheet', href: 'css/tooplate-style.css' },
+                { rel: 'stylesheet', href: 'css/annachiara-custom.css' },
             ],
             script: [
                 {

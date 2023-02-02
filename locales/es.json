@@ -29,5 +29,8 @@
         "history_title": "Realidad histórica",
         "copyright": "&copy; Annachiara Villa 2023",
         "made_by": "Built by <a href='https://mixapolis.com' rel='nofollow' target='_blank'><strong>Jay</strong></a>"
+    },
+    "treatments": {
+        "intro_text": "Treatments intro text"
     }
 }

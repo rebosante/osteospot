@@ -1,0 +1,24 @@
+/* Treatments */
+.treatment-1 {
+    padding: 30px;
+    background: rgb(136, 184, 190);
+}
+.treatment-2 {
+    padding: 35px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background: rgb(175, 229, 238);
+}
+.treatment-3 {
+    padding: 25px;
+    margin-top: 20px;
+    margin-right: 25px;
+    background: rgb(250, 175, 105);
+}
+/* Pediatric */
+.tm-hero-header {
+    padding: 0 80px 0;
+}
+.tm-hero-block {
+    padding: 0 80px 95px;
+}
