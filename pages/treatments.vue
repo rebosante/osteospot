@@ -109,7 +109,7 @@
         </div>
 
         <div class="item" data-desktop-seq-no="8" data-mobile-seq-no="6">
-            <img src="~/assets/images/image-03.jpg" alt="Image">
+            <img src="~/assets/images/image-05.jpg" alt="Image">
         </div>
 
         <div class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">

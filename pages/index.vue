@@ -7,7 +7,6 @@
                 </div>
             </header>
             <p class="tm-hero-text">
-                {{ $t('hello', { name: 'Annachiara' }) }} <br />
                 &ldquo;{{ $t('home.welcome') }}&rdquo;
             </p>
         </div>

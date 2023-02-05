@@ -8,7 +8,7 @@ COLORS
 
 Primary Dark:       #996666
 Primary Light:      #cc9999
-Secondary:          #9999cc
+Secondary:          #6a93b7
 Dark Background:    #333333
 Dark Gray Text:     #666666
 Light Gray Text:    #999999
@@ -208,7 +208,7 @@ img {
 }
 
 .tm-btn-primary {
-  color: #9999cc;
+  color: #6a93b7;
   background-color: #ffffff;
 }
 
@@ -243,7 +243,7 @@ img {
 }
 
 .tm-bg-secondary {
-  background-color: #9999cc;
+  background-color: #6a93b7;
 }
 
 .tm-mt {
