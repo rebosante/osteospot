@@ -62,9 +62,11 @@
                 <h2>Drenaje linfatico piernas y pies</h2>
                 <p>Ayuda al efecto drenante sobre los vasos linf&aacute;ticos y drenaje fisiol&oacute;gico del l&iacute;quido estancado y ayuda a la reabsorci&oacute;n de los l&iacute;quidos en los vasos superficiales.</p>
                 <p>La endocrina act&uacute;a sobre las gl&aacute;ndulas y el sistema para aumentar el sistema inmunol&oacute;gico.</p>
+                <hr class="hr-pad"/>
                 <h2>TRATAMIENTO ANTI ARTROSIS MANOS Y PIES</h2>
                 <p>Ayuda a mejorar todas las modificationes de los dedosde los pies y de las manos que en los a&ntilde;os van aumentando y pueden causar problemas. Imporante con el tiempo.</p>
                 <p>Mejora visibilmente la elasticidad de los tejidos.</p>
+                <hr class="hr-pad"/>
                 <h2>Massajes Corporales y Reiki</h2>
             </div>
         </div>

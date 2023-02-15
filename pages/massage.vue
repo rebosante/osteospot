@@ -8,7 +8,9 @@
                 </div>
             </header>
             <p class="tm-hero-text tm-bg-white-transparence">
-                El arte del bienestar físico y mental, tratamientos personalizado
+                El arte del bienestar físico y mental
+                <br/>
+                <strong>Tratamientos personalizado</strong>
             </p>
         </div>
         <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
