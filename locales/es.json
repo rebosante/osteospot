@@ -32,5 +32,11 @@
     },
     "treatments": {
         "intro_text": "Treatments intro text"
+    },
+    "geriatric": {
+        "intro_text": "Treatments intro text"
+    },
+    "pediatric": {
+        "intro_text": "Treatments intro text"
     }
 }

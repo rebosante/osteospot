@@ -1,14 +1,14 @@
 <template>
     <main class="tm-container masonry tm-main-container">
-        <div class="item tm-bg-white-transparence tm-block tm-block-left" data-desktop-seq-no="1"
+        <div class="item tm-block tm-block-left" data-desktop-seq-no="1"
             data-mobile-seq-no="1">
             <header class="tm-block-brand">
                 <div class="tm-text-white tm-block-brand-inner">
                     <img class="tm-logo-brand" src="~/assets/images/logo.svg">
                 </div>
             </header>
-            <p class="tm-hero-text">
-                Intro masajes
+            <p class="tm-hero-text tm-bg-white-transparence">
+                El arte del bienestar físico y mental, tratamientos personalizado
             </p>
         </div>
         <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
@@ -26,7 +26,7 @@
             <h2>masaje energetico</h2>
             <p>Tratamiento reequilibrante con aceite esencial de menta. es un masaje de cuerpo completo con
                 presi&oacute;n en los puntos energ&eacute;tico de los pies y los o&iacute;dos. Te da una
-                sensaci&oacute;n de energ&iacute;a renovad.</p>
+                sensaci&oacute;n de energ&iacute;a renovada.</p>
             <div class="tm-text-right">
                 <a href="#" class="tm-btn tm-btn-small tm-btn-primary tm-mt">{{ $t('read_more') }}</a>
             </div>
@@ -59,7 +59,7 @@
             <img src="~/assets/images/image-03.jpg" alt="Image">
         </div>
 
-        <div class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
+        <div id="contact" class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
             <div class="tm-form-container tm-block-pad tm-pb-0">
                 <header>
                     <h2 class="tm-text-uppercase tm-text-gray-light tm-mb">

@@ -1,12 +1,12 @@
 <template>
     <main class="tm-container masonry tm-main-container">
-        <div class="item tm-bg-white-transparence tm-block tm-block-left" data-desktop-seq-no="1" data-mobile-seq-no="1">
+        <div class="item tm-block tm-block-left" data-desktop-seq-no="1" data-mobile-seq-no="1">
             <header class="tm-block-brand">
                 <div class="tm-text-white tm-block-brand-inner">
                     <img class="tm-logo-brand" src="~/assets/images/logo.svg">
                 </div>
             </header>
-            <p class="tm-hero-text">
+            <p class="tm-hero-text tm-bg-white-transparence">
                 {{ $t('treatments.intro_text') }}
             </p>
         </div>
@@ -112,7 +112,7 @@
             <img src="~/assets/images/image-05.jpg" alt="Image">
         </div>
 
-        <div class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
+        <div id="contact" class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
             <div class="tm-form-container tm-block-pad tm-pb-0">
                 <header>
                     <h2 class="tm-text-uppercase tm-text-gray-light tm-mb">

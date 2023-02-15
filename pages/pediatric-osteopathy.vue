@@ -1,14 +1,16 @@
 <template>
     <main class="tm-container masonry tm-main-container">
-        <div class="item tm-bg-white-transparence tm-block tm-block-left" data-desktop-seq-no="1" data-mobile-seq-no="1">
+        <div class="item tm-block tm-block-left" data-desktop-seq-no="1" data-mobile-seq-no="1">
             <header class="tm-block-brand">
                 <div class="tm-text-white tm-block-brand-inner">
                     <img class="tm-logo-brand" src="~/assets/images/logo.svg">
                 </div>
             </header>
-            <h2 class="tm-hero-header">TERAPIA CRANEO-SACRAL</h2>
-            <p class="tm-hero-block">La osteopat&iacute;a infantil trabaja con suaves manipulaciones, no invasivas, sobre centros reflex&oacute;genos relacionados con el sistema nervioso central (SNC), act&uacute;a sobre las tensiones de las membranas intracraneales, y la repercusi&oacute;n que estas puedan tener a nivel del desarrollo psiconeuromotor.</p>
-        </div>
+            <div class="tm-hero-text-titled tm-bg-white-transparence">
+                <h2 class="tm-hero-header">TERAPIA CRANEO-SACRAL</h2>
+                <p class="tm-hero-block">La osteopat&iacute;a infantil trabaja con suaves manipulaciones, no invasivas, sobre centros reflex&oacute;genos relacionados con el sistema nervioso central (SNC), act&uacute;a sobre las tensiones de las membranas intracraneales, y la repercusi&oacute;n que estas puedan tener a nivel del desarrollo psiconeuromotor.</p>
+            </div>
+            </div>
         <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
             <img src="~/assets/images/image-09.jpg" alt="Image" class="tm-img-left">
         </div>
@@ -41,7 +43,7 @@
             <img src="~/assets/images/image-08.jpg" alt="Image">
         </div>
 
-        <div class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
+        <div id="contact" class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
             <div class="tm-form-container tm-block-pad tm-pb-0">
                 <header>
                     <h2 class="tm-text-uppercase tm-text-gray-light tm-mb">

@@ -13,14 +13,13 @@
                 </li>
                 <li><NuxtLink to="massage">{{ $t('menu.massages') }}</NuxtLink></li>
                 <li><NuxtLink to="annachiara">{{ $t('menu.annachiara') }}</NuxtLink></li>
-                <li><NuxtLink to="contact">{{ $t('menu.contact') }}</NuxtLink></li>
+                <li><a href="#contact">{{ $t('menu.contact') }}</a></li>
                 <li>
                     <form>
                         <label for="locale-select">{{ $t('language') }}: </label>
                         <select id="locale-select" v-model="$i18n.locale">
                         <option value="es">es</option>
                         <option value="en">en</option>
-                        <option value="it">it</option>
                         </select>
                     </form>
                 </li>

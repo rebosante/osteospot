@@ -26,3 +26,7 @@ h2 {
 .tm-hero-block {
     padding: 0 80px 95px;
 }
+
+.tm-hero-text-titled {
+    padding-top: 60px;
+}

@@ -1,12 +1,12 @@
 <template>
     <main class="tm-container masonry tm-main-container">
-        <div class="item tm-bg-white-transparence tm-block tm-block-left" data-desktop-seq-no="1" data-mobile-seq-no="1">
+        <div class="item tm-block tm-block-left" data-desktop-seq-no="1" data-mobile-seq-no="1">
             <header class="tm-block-brand">
                 <div class="tm-text-white tm-block-brand-inner">
                     <img class="tm-logo-brand" src="~/assets/images/logo.svg">
                 </div>
             </header>
-            <p class="tm-hero-text">A medida que envejecemos nos encontramos con una serie de patolog&iacute;as y problemas f&iacute;sicos que pueden afectar seriamente la calidad de vida de una persona. Estos problemas suelen depender de factores como el trabajo realizado en el pasado, los traumas sufridos, las patolog&iacute;as previas o los dolores que se presentan con frecuencia a lo largo de los a&ntilde;os.</p>
+            <p class="tm-hero-text tm-bg-white-transparence">A medida que envejecemos nos encontramos con una serie de patolog&iacute;as y problemas f&iacute;sicos que pueden afectar seriamente la calidad de vida de una persona. Estos problemas suelen depender de factores como el trabajo realizado en el pasado, los traumas sufridos, las patolog&iacute;as previas o los dolores que se presentan con frecuencia a lo largo de los a&ntilde;os.</p>
         </div>
         <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
             <img src="~/assets/images/image-01.jpg" alt="Image" class="tm-img-left">
@@ -54,7 +54,7 @@
             <img src="~/assets/images/image-03.jpg" alt="Image">
         </div>
 
-        <div class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
+        <div id="contact" class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
             <div class="tm-form-container tm-block-pad tm-pb-0">
                 <header>
                     <h2 class="tm-text-uppercase tm-text-gray-light tm-mb">
