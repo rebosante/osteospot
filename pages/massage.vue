@@ -36,7 +36,7 @@
                 masaje final descongestionante ojeras.</p>
         </div>
         <div class="item" data-desktop-seq-no="4" data-mobile-seq-no="8">
-            <img src="~/assets/images/image-04.jpg" alt="Image" class="tm-img-left">
+            <img src="~/assets/images/image-17.jpg" alt="Image" class="tm-img-left">
         </div>
         <Footer />
         <div class="item" data-desktop-seq-no="6" data-mobile-seq-no="2">
@@ -60,7 +60,7 @@
         </div>
 
         <div class="item" data-desktop-seq-no="8" data-mobile-seq-no="6">
-            <img src="~/assets/images/image-03.jpg" alt="Image">
+            <img src="~/assets/images/image-18.jpg" alt="Image">
         </div>
 
         <Contact />

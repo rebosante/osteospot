@@ -11,7 +11,7 @@
             </p>
         </div>
         <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
-            <img src="~/assets/images/image-01.jpg" alt="Image" class="tm-img-left">
+            <img src="~/assets/images/image-12.jpg" alt="Image" class="tm-img-left">
         </div>
         <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2" data-desktop-seq-no="3"
             data-mobile-seq-no="5">
@@ -19,9 +19,7 @@
             <p>
               {{ $t('home.reason') }}
             </p>
-            <div class="tm-text-right">
-                <a href="#" class="tm-btn tm-btn-small tm-btn-primary tm-mt">{{ $t('read_more') }}</a>
-            </div>
+            <ReadMore />
         </div>
         <div class="item" data-desktop-seq-no="4" data-mobile-seq-no="8">
             <img src="~/assets/images/image-04.jpg" alt="Image" class="tm-img-left">

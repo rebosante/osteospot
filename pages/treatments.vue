@@ -22,9 +22,6 @@
                 <li>problemas articulacion temporamandibular</li>
                 <li>alergias</li>
             </ul>
-            <div class="tm-text-right">
-                <a href="#" class="tm-btn tm-btn-small tm-btn-primary tm-mt">{{ $t('read_more') }}</a>
-            </div>
         </div>
         <div class="item" data-desktop-seq-no="3"
             data-mobile-seq-no="5">

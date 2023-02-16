@@ -12,7 +12,7 @@
             </div>
             </div>
         <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
-            <img src="~/assets/images/image-09.jpg" alt="Image" class="tm-img-left">
+            <img src="~/assets/images/image-07.jpg" alt="Image" class="tm-img-left">
         </div>
         <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2" data-desktop-seq-no="3"
             data-mobile-seq-no="5">
@@ -22,7 +22,7 @@
             <p>La acci&oacute;n del terapeuta no se limita a corregir el movimiento de un hueso con respecto a otro, sino que trata de devolver a los tejidos su funcionalidad, una de las cuales consiste precisamente en la capacidad de responder a las tensiones del entorno. El objetivo de la t&eacute;cnica cr&aacute;neo-sacral es ayudar a la persona a tomar conciencia de s&iacute; misma y de sus problemas, para que el cuerpo-mente pueda lograr la curaci&oacute;n. Nos colocamos como ayudantes para lograr una eventual sanaci&oacute;n.</p>
         </div>
         <div class="item" data-desktop-seq-no="4" data-mobile-seq-no="8">
-            <img src="~/assets/images/image-07.jpg" alt="Image" class="tm-img-left">
+            <img src="~/assets/images/image-09.jpg" alt="Image" class="tm-img-left">
         </div>
         <Footer />
         <div class="item" data-desktop-seq-no="6" data-mobile-seq-no="2">
@@ -48,7 +48,7 @@
         </div>
 
         <div class="item" data-desktop-seq-no="8" data-mobile-seq-no="6">
-            <img src="~/assets/images/image-08.jpg" alt="Image">
+            <img src="~/assets/images/image-15.jpg" alt="Image">
         </div>
 
         <Contact />

@@ -9,7 +9,7 @@
             <p class="tm-hero-text tm-bg-white-transparence">A medida que envejecemos nos encontramos con una serie de patolog&iacute;as y problemas f&iacute;sicos que pueden afectar seriamente la calidad de vida de una persona. Estos problemas suelen depender de factores como el trabajo realizado en el pasado, los traumas sufridos, las patolog&iacute;as previas o los dolores que se presentan con frecuencia a lo largo de los a&ntilde;os.</p>
         </div>
         <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
-            <img src="~/assets/images/image-01.jpg" alt="Image" class="tm-img-left">
+            <img src="~/assets/images/image-14.jpg" alt="Image" class="tm-img-left">
         </div>
         <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2" data-desktop-seq-no="3"
             data-mobile-seq-no="5">
@@ -36,7 +36,7 @@
         </div>
         <Footer />
         <div class="item" data-desktop-seq-no="6" data-mobile-seq-no="2">
-            <img src="~/assets/images/image-02.jpg" alt="Image">
+            <img src="~/assets/images/image-13.jpg" alt="Image">
         </div>
         <div class="item tm-block-right" data-desktop-seq-no="7" data-mobile-seq-no="3">
             <div class="tm-block-right-inner tm-bg-primary-light tm-text-white tm-block tm-block-wider tm-block-pad">
@@ -54,7 +54,7 @@
         </div>
 
         <div class="item" data-desktop-seq-no="8" data-mobile-seq-no="6">
-            <img src="~/assets/images/image-03.jpg" alt="Image">
+            <img src="~/assets/images/image-02.jpg" alt="Image">
         </div>
 
         <Contact />
