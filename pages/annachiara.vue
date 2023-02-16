@@ -56,41 +56,7 @@
             <img src="~/assets/images/image-03.jpg" alt="Image">
         </div>
 
-        <div id="contact" class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
-            <div class="tm-form-container tm-block-pad tm-pb-0">
-                <header>
-                    <h2 class="tm-text-uppercase tm-text-gray-light tm-mb">
-                        {{ $t('contact') }}
-                    </h2>
-                </header>
-                <form action="index.html" class="tm-contact-form" method="POST">
-                    <div class="tm-form-group">
-                        <input type="text" id="contact_name" name="contact_name" class="form-control"
-                            :placeholder="$t('name')" required />
-                    </div>
-                    <div class="tm-form-group">
-                        <input type="email" id="contact_email" name="contact_email" class="form-control"
-                            :placeholder="$t('email')" required />
-                    </div>
-                    <div class="tm-form-group">
-                        <textarea rows="5" id="contact_message" name="contact_message" class="form-control"
-                            :placeholder="$t('message')" required></textarea>
-                    </div>
-                    <div class="tm-text-right">
-                        <button type="submit" class="tm-btn tm-btn-secondary tm-btn-pad-big">{{ $t('send') }}</button>
-                    </div>
-                </form>
-            </div>
-
-            <div class="tm-form-section-tag">
-                <div class="tm-bg-secondary tm-text-white tm-block-pad tm-form-section-tag-inner">
-                    <h2>tratamiento facial</h2>
-                    <p>ligero masaje muy relajante de los puntos linfatico de la cara, liberacion de los musclos y
-                        estiramiento de los mismos, descoaptaciones de las articulaciones faciales y de la cabeza y
-                        masaje final descongestionante ojeras.</p>
-                </div>
-            </div>
-        </div>
+        <Contact />
 
     </main>
 </template>

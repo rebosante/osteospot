@@ -29,16 +29,18 @@
             <p>Tratamiento reequilibrante con aceite esencial de menta. es un masaje de cuerpo completo con
                 presi&oacute;n en los puntos energ&eacute;tico de los pies y los o&iacute;dos. Te da una
                 sensaci&oacute;n de energ&iacute;a renovada.</p>
-            <div class="tm-text-right">
-                <a href="#" class="tm-btn tm-btn-small tm-btn-primary tm-mt">{{ $t('read_more') }}</a>
-            </div>
+            <br />
+            <h2>tratamiento facial</h2>
+            <p>ligero masaje muy relajante de los puntos linfatico de la cara, liberacion de los musclos y
+                estiramiento de los mismos, descoaptaciones de las articulaciones faciales y de la cabeza y
+                masaje final descongestionante ojeras.</p>
         </div>
         <div class="item" data-desktop-seq-no="4" data-mobile-seq-no="8">
             <img src="~/assets/images/image-04.jpg" alt="Image" class="tm-img-left">
         </div>
         <Footer />
         <div class="item" data-desktop-seq-no="6" data-mobile-seq-no="2">
-            <img src="~/assets/images/image-02.jpg" alt="Image">
+            <img src="~/assets/images/image-11.jpg" alt="Image">
         </div>
         <div class="item tm-block-right" data-desktop-seq-no="7" data-mobile-seq-no="3">
             <div class="tm-block-right-inner tm-bg-primary-light tm-text-white tm-block tm-block-wider tm-block-pad">
@@ -61,41 +63,6 @@
             <img src="~/assets/images/image-03.jpg" alt="Image">
         </div>
 
-        <div id="contact" class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
-            <div class="tm-form-container tm-block-pad tm-pb-0">
-                <header>
-                    <h2 class="tm-text-uppercase tm-text-gray-light tm-mb">
-                        {{ $t('contact') }}
-                    </h2>
-                </header>
-                <form action="index.html" class="tm-contact-form" method="POST">
-                    <div class="tm-form-group">
-                        <input type="text" id="contact_name" name="contact_name" class="form-control"
-                            :placeholder="$t('name')" required />
-                    </div>
-                    <div class="tm-form-group">
-                        <input type="email" id="contact_email" name="contact_email" class="form-control"
-                            :placeholder="$t('email')" required />
-                    </div>
-                    <div class="tm-form-group">
-                        <textarea rows="5" id="contact_message" name="contact_message" class="form-control"
-                            :placeholder="$t('message')" required></textarea>
-                    </div>
-                    <div class="tm-text-right">
-                        <button type="submit" class="tm-btn tm-btn-secondary tm-btn-pad-big">{{ $t('send') }}</button>
-                    </div>
-                </form>
-            </div>
-
-            <div class="tm-form-section-tag">
-                <div class="tm-bg-secondary tm-text-white tm-block-pad tm-form-section-tag-inner">
-                    <h2>tratamiento facial</h2>
-                    <p>ligero masaje muy relajante de los puntos linfatico de la cara, liberacion de los musclos y
-                        estiramiento de los mismos, descoaptaciones de las articulaciones faciales y de la cabeza y
-                        masaje final descongestionante ojeras.</p>
-                </div>
-            </div>
-        </div>
-
+        <Contact />
     </main>
 </template>
