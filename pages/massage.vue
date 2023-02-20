@@ -20,20 +20,18 @@
             data-desktop-seq-no="3" data-mobile-seq-no="5">
             <i class="fas fa-award fa-4x tm-block-icon"></i>
             <h2>Masaje Deportivo</h2>
-            <p>Sus objetivos consisten en la prevenci&oacute;n y tratamiento de lesiones deportivas. - Preparando el
-                tejido muscular para el esfuerzo deportivo, manteni&eacute;ndolo en un estado &oacute;ptimo. -
-                Previniendo las lesiones tanto en entrenamiento como en competici&oacute;n. - Favoreciendo la
-                recuperaci&oacute;n de las lesiones que se presenten y de la forma f&iacute;sica del deportista.</p>
+            <p>Sus objetivos consisten en la prevenci&oacute;n y tratamiento de lesiones deportivas:</p>
+            <ul>
+            <li>Prepara el tejido muscular para el esfuerzo deportivo, manteni&eacute;ndolo en un estado &oacute;ptimo.</li>
+            <li>Previene las lesiones tanto en el entrenamiento como en la competici&oacute;n.</li>
+            <li>Favorece la recuperaci&oacute;n de las lesiones que se presenten.</li>
+            </ul>
             <br />
             <h2>masaje energetico</h2>
-            <p>Tratamiento reequilibrante con aceite esencial de menta. es un masaje de cuerpo completo con
-                presi&oacute;n en los puntos energ&eacute;tico de los pies y los o&iacute;dos. Te da una
-                sensaci&oacute;n de energ&iacute;a renovada.</p>
+            <p>Tratamiento reequilibrante con aceite esencial de menta. Es un masaje de cuerpo completo, con presi&oacute;n en los puntos energ&eacute;ticos de los pies y los o&iacute;dos. Da una sensaci&oacute;n de energ&iacute;a renovadora.</p>
             <br />
             <h2>tratamiento facial</h2>
-            <p>ligero masaje muy relajante de los puntos linfatico de la cara, liberacion de los musclos y
-                estiramiento de los mismos, descoaptaciones de las articulaciones faciales y de la cabeza y
-                masaje final descongestionante ojeras.</p>
+            <p>Ligero masaje muy relajante de los puntos linf&aacute;ticos de la cara, liberaci&oacute;n de los musculos y estiramiento de los mismos. Descaptaciones de las articulaciones faciales y de la cabeza. Masaje final descongestionante de ojeras.</p>
         </div>
         <div class="item" data-desktop-seq-no="4" data-mobile-seq-no="8">
             <img src="~/assets/images/image-17.jpg" alt="Image" class="tm-img-left">
@@ -48,13 +46,9 @@
                 <p>Incre&iacute;ble tratamiento para aliviar el estr&eacute;s. un masaje de cuerpo completo
                     profundamente relajante con movimientos suaves y profundos. Al principio sin aceite usando una
                     t&eacute;cnica de fascioterapia para estirar el m&uacute;sculo y luego con aceite para inducir un
-                    estado de calma total. podemos mezclar con t&eacute;cnicas de reflexolog&iacute;a craneo sacra y
-                    podal</p>
+                    estado de calma total. Se puede intercalar con t&eacute;cnicas de reflexolog&iacute;a craneo sacral y podal.</p>
                 <br />
-                <p>An incredible stress relief treatment. a deeply relaxing full body massage with softly and deep
-                    moviments. At strats witout oil using a fascioterapy technic to stretching muscle and then by oil to
-                    inducing a complte stete of calm.&nbsp; we can mix with&nbsp; craneo sacral&nbsp; and podal
-                    reflexology technic.</p>
+                <p>An incredible stress relief treatment. A deeply relaxing full body massage with soft and deep movements. It starts off without oil, using a fasciotherapy technique to stretch muscles, and then moves on to use oil to induce a complete state of calm. We can mix with craneo, sacral and podal reflexology technique.</p>
                 <!-- -->
             </div>
         </div>

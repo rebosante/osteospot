@@ -48,26 +48,3 @@
             </div>
         </div>
 </template>
-
-<script>
-    export default {
-        props: {
-            title: {
-                type: String,
-                default: ''
-            },
-            brief: {
-                type: String,
-                default: ''
-            }
-        },
-        computed: {
-            titleTxt () {
-                return this.title || this.$t('home.history_title')
-            },
-            briefTxt () {
-                return this.brief || this.$t('home.history_brief')
-            }
-        }
-    }
-</script>

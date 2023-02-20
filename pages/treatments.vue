@@ -65,6 +65,7 @@
                 <p>Mejora visibilmente la elasticidad de los tejidos.</p>
                 <hr class="hr-pad"/>
                 <h2>Massajes Corporales y Reiki</h2>
+                <ReadMore to="massage" />
             </div>
         </div>
         <Footer />
@@ -87,22 +88,18 @@
         </div>
         <div class="item tm-block-right" data-desktop-seq-no="7" data-mobile-seq-no="3">
             <div class="tm-block-right-inner tm-bg-primary-light tm-text-white tm-block tm-block-wider tm-block-pad">
-                <header>
-                    <h2 class="tm-text-uppercase">
-                        TRATAMIENTOS VISCERAL
-                    </h2>
-                </header>
-                <p>Tecnica osteopatica para dar alivio a los organos interno para que funcionen mas fluidamente</p>
-                <p>indicato para quien tiene:</p>
+                <h2>TRATAMIENTOS VISCERALES</h2>
+                <p>T&eacute;cnica osteop&aacute;tica para dar alivio a los &oacute;rganos internos y que funcionen m&aacute;s fluidamente.</p>
+                <p>Indicado para quien padece de:</p>
                 <ul>
-                <li>molestias digestivas</li>
-                <li>gastritis y molestias intestinales</li>
-                <li>estre&ntilde;imiento</li>
-                <li>hernias de hiato</li>
-                <li>trastornos ginecologico, incontinencia etc.</li>
-                <li>continuos dolor de espalda</li>
+                <li>molestias digestivas.</li>
+                <li>gastritis y molestias intestinales.</li>
+                <li>estre&ntilde;imiento.</li>
+                <li>hernias de hiato.</li>
+                <li>trastornos ginecol&oacute;gicos, incontinencia, etc.</li>
+                <li>continuos dolores de espalda.</li>
                 </ul>
-                <p>Alivia y mejoras molestias de los ciclos femininos y del tono muscolar.</p>
+                <p>Alivia y mejora molestias de los ciclos femeninos y del tono muscular.</p>
                 <!-- -->
             </div>
         </div>

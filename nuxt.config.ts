@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     app: {
         head: {
             charset: 'utf-16',
-            viewport: 'width=500, initial-scale=1',
+            viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
             titleTemplate: '%s -OsteoSpot by Annachiara',
             meta: [
               // <meta name="description" content="My amazing site">
@@ -26,14 +26,6 @@ export default defineNuxtConfig({
                 { rel: 'stylesheet', href: 'css/all.min.css' },
                 { rel: 'stylesheet', href: 'css/tooplate-style.css' },
                 { rel: 'stylesheet', href: 'css/annachiara-custom.css' },
-            ],
-            script: [
-                {
-                    src: 'js/jquery-3.3.1.min.js'
-                },
-                {
-                    src: 'js/osteospot.js'
-                }
             ]
         }
       }
