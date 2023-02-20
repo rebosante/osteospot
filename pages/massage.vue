@@ -10,7 +10,7 @@
             <p class="tm-hero-text tm-bg-white-transparence">
                 El arte del bienestar físico y mental
                 <br/>
-                <strong>Tratamientos personalizado</strong>
+                <strong>Tratamientos personalizados</strong>
             </p>
         </div>
         <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
@@ -41,7 +41,7 @@
         </div>
         <div class="item tm-block-right" data-desktop-seq-no="7" data-mobile-seq-no="3">
             <div class="tm-block-right-inner tm-bg-primary-light tm-text-white tm-block tm-block-wider tm-block-pad">
-                <h2>Masaje Descontracturante o Terap&eacute;utico</h2>
+                <h2>Masaje Descontracturante / Terap&eacute;utico</h2>
                 <p>Incre&iacute;ble tratamiento para aliviar el estr&eacute;s. un masaje de cuerpo completo
                     profundamente relajante con movimientos suaves y profundos. Al principio sin aceite usando una
                     t&eacute;cnica de fascioterapia para estirar el m&uacute;sculo y luego con aceite para inducir un

@@ -42,7 +42,7 @@
                     <p>Carrer d'Eivissa 3 A</p>
                     <p>Calle Bonaire, 16 &ndash; 1&ordm;</p>
                     <p><strong>
-                        Posibilidad de tratamiento a domicilio.
+                        Posibilidad de tratamientos a domicilio.
                     </strong></p>
                     <a href="tel:+34666795883">{{ $t('call_me') }}</a>
                 </div>
