@@ -38,12 +38,13 @@
                             <a href="" target="_blank">Whatsapp</a>
                         </li>
                     </ul>
-                    <p>Carrer del deganat 2</p>
+                    <p>Carrer del Deganat 2</p>
                     <p>Carrer d'Eivissa 3 A</p>
                     <p>Calle Bonaire, 16 &ndash; 1&ordm;</p>
                     <p><strong>
                         Posibilidad de tratamiento a domicilio.
                     </strong></p>
+                    <a href="tel:+34666795883">{{ $t('call_me') }}</a>
                 </div>
             </div>
         </div>
