@@ -16,7 +16,6 @@
         </div>
         <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2"
             data-desktop-seq-no="3" data-mobile-seq-no="5">
-            <i class="fas fa-award fa-4x tm-block-icon"></i>
             <h2>Mis habilidades</h2>
             <ul>
                 <li>Osteopata por la escuela de osteopatia Gaia en Mallorca.</li>

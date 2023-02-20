@@ -13,7 +13,6 @@
         </div>
         <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2" data-desktop-seq-no="3"
             data-mobile-seq-no="5">
-            <i class="fas fa-award fa-4x tm-block-icon"></i>
             <p>Los tratamientos osteop&aacute;ticos est&aacute;n indicados en caso de:</p>
             <ul>
                 <li>Dolores musculares</li>

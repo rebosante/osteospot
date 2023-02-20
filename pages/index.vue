@@ -15,7 +15,6 @@
         </div>
         <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2" data-desktop-seq-no="3"
             data-mobile-seq-no="5">
-            <i class="fas fa-award fa-4x tm-block-icon"></i>
             <p>
               {{ $t('home.reason') }}
             </p>
@@ -35,7 +34,7 @@
                         {{ $t('home.expert_title') }}
                     </h2>
                 </header>
-                <p>{{ $t('home.expert_paragraph_1') }}</p>
+                <div v-html="$t('home.expert_paragraph_1')" />
                 <p class="tm-mt tm-mb-small">{{ $t('home.expert_paragraph_2') }}</p>
                 <!-- -->
             </div>
