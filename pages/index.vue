@@ -6,7 +6,7 @@
                     <img class="tm-logo-brand" src="~/assets/images/logo.svg">
                 </div>
             </header>
-            <p class="tm-hero-text tm-bg-white-transparence">
+            <p class="tm-hero-text">
                 &ldquo;{{ $t('home.welcome') }}&rdquo;
             </p>
         </div>

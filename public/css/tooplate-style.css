@@ -130,6 +130,17 @@ img {
   padding: 60px 80px;
 }
 
+.tm-hero-text, .tm-hero-text-titled {
+  color: white;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.tm-hero-text-titled .tm-hero-block {
+  font-size: 20px;
+  line-height: 28px;
+}
+
 .tm-block-pad {
   padding: 67px 63px;
 }
@@ -508,23 +519,46 @@ nav {
   .tm-contact-form {
     width: calc(100% - 20px);
   }
+  .menu.cf {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu.cf > li {
+    flex: 1 1 0;
+  }
+  .menu.cf > li:last-of-type {
+    margin-top: .5rem;
+  }
+  .tm-hero-text, .tm-hero-text-titled, .tm-hero-text-titled .tm-hero-block {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @media (max-width: 520px) {
   body {
-    padding: 50px;
+    padding: 20px;
   }
 
   .tm-block-pad {
-    padding: 45px;
+    padding: 30px;
   }
 
   .tm-hero-text {
-    padding: 0 50px 45px;
+    padding: 30px;
   }
 
   .tm-block-brand {
     margin-top: 70px;
+  }
+  .tm-hero-text-titled {
+    padding-top: 30px !important;
+  }
+  .tm-hero-header {
+    padding: 0 30px 0 !important;
+  }
+  .tm-hero-block {
+    padding: 0 30px 30px !important;
   }
 }
 

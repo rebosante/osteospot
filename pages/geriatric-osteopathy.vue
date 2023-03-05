@@ -9,7 +9,7 @@
             <div v-html="$t('geriatric.intro_text')" />
         </div>
         <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
-            <img src="~/assets/images/image-14.jpg" alt="Image" class="tm-img-left">
+            <img src="~/assets/images/image-04.jpg" alt="Image" class="tm-img-left">
         </div>
         <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2" data-desktop-seq-no="3"
             data-mobile-seq-no="5">
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="item" data-desktop-seq-no="4" data-mobile-seq-no="8">
-            <img src="~/assets/images/image-04.jpg" alt="Image" class="tm-img-left">
+            <img src="~/assets/images/image-14.jpg" alt="Image" class="tm-img-left">
         </div>
         <Footer />
         <div class="item" data-desktop-seq-no="6" data-mobile-seq-no="2">

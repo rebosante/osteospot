@@ -28,5 +28,20 @@ export default defineNuxtConfig({
                 { rel: 'stylesheet', href: 'css/annachiara-custom.css' },
             ]
         }
-      }
+      },
+      /*modules: [
+        ['nuxt-mail', {
+          message: {
+            to: 'asnete@gmail.com',
+          },
+          smtp: {
+            host: 'smtp.dreamhost.com',
+            port: 465,
+            auth: {
+              user: 'info@osteorevolucion.com',
+              pass: '4nn4ch14r4_'
+            },
+          },
+        }],
+      ]*/
 })

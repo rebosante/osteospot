@@ -5,7 +5,7 @@ h2 {
 /* Treatments */
 .treatment-1 {
     padding: 30px;
-    background: rgb(136, 184, 190);
+    background: rgb(168, 210, 216);
 }
 .treatment-2 {
     padding: 35px;
@@ -33,4 +33,9 @@ h2 {
 .hr-pad {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+ul {
+    padding: 0;
+    padding-left: 1.25rem;
 }

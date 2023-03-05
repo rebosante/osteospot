@@ -7,7 +7,7 @@
                     <img class="tm-logo-brand" src="~/assets/images/logo.svg">
                 </div>
             </header>
-            <p class="tm-hero-text tm-bg-white-transparence">
+            <p class="tm-hero-text">
                 El arte del bienestar físico y mental
                 <br/>
                 <strong>Tratamientos personalizados</strong>

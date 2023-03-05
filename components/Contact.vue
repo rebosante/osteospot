@@ -6,18 +6,23 @@
                         {{ $t('contact') }}
                     </h2>
                 </header>
-                <form action="index.html" class="tm-contact-form" method="POST">
+                <form @submit.prevent="submitForm" class="tm-contact-form">
                     <div class="tm-form-group">
-                        <input type="text" id="contact_name" name="contact_name" class="form-control" :placeholder="$t('name')" required/>
+                    <input v-model.trim="name" type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name">
+                    <span v-if="nameError" class="error">{{ nameError }}</span>
                     </div>
                     <div class="tm-form-group">
-                        <input type="email" id="contact_email" name="contact_email" class="form-control" :placeholder="$t('email')" required/>
+                    <input v-model.trim="email" type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email">
+                    <span v-if="emailError" class="error">{{ emailError }}</span>
                     </div>
                     <div class="tm-form-group">
-                        <textarea rows="5" id="contact_message" name="contact_message" class="form-control" :placeholder="$t('message')" required></textarea>
+                    <textarea v-model.trim="message" rows="5" id="contact_message" name="contact_message" class="form-control" placeholder="Message"></textarea>
+                    <span v-if="messageError" class="error">{{ messageError }}</span>
+                    <br v-if="generalMessage">
+                    <span v-if="generalMessage" class="error">{{ generalMessage }}</span>
                     </div>
                     <div class="tm-text-right">
-                        <button type="submit" class="tm-btn tm-btn-secondary tm-btn-pad-big">{{ $t('send') }}</button>
+                    <button type="submit" class="tm-btn tm-btn-secondary tm-btn-pad-big">Send</button>
                     </div>
                 </form>
             </div>
@@ -49,3 +54,76 @@
             </div>
         </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      name: "",
+      email: "",
+      message: "",
+      nameError: "",
+      emailError: "",
+      messageError: "",
+      generalMessage: ""
+    };
+  },
+  computed: {
+    formInvalid() {
+      return this.nameError || this.emailError || this.messageError || this.generalMessage;
+    },
+  },
+  methods: {
+    submitForm() {
+        console.log('entrando');
+      // handle form submission
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!this.name.trim() || !emailRegex.test(this.email) || !this.message.trim()) {
+        this.generalMessage = "Please fill all fields";
+        return
+      }
+      this.generalMessage = "";
+      console.log('send mail here!');
+    },
+    validateName() {
+      if (!this.name.trim()) {
+        this.nameError = "Name is required";
+      } else {
+        this.nameError = "";
+      }
+    },
+    validateEmail() {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(this.email)) {
+        this.emailError = "Please enter a valid email address";
+      } else {
+        this.emailError = "";
+      }
+    },
+    validateMessage() {
+      if (!this.message.trim()) {
+        this.messageError = "Message is required";
+      } else {
+        this.messageError = "";
+      }
+    },
+  },
+  watch: {
+    name() {
+      this.validateName();
+    },
+    email() {
+      this.validateEmail();
+    },
+    message() {
+      this.validateMessage();
+    },
+  },
+};
+</script>
+
+<style scoped lang="css">
+.error {
+  color: red;
+  font-size: 14px;
+}
+</style>
