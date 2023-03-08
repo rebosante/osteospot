@@ -134,6 +134,7 @@ img {
   color: white;
   font-size: 20px;
   line-height: 28px;
+  text-transform: uppercase;
 }
 
 .tm-hero-text-titled .tm-hero-block {
