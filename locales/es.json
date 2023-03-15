@@ -2,7 +2,7 @@
     "hello": "Hola, soy {name}...",
     "call_me": "Llámame al +34 666 795 883",
     "language": "Language",
-    "contact": "Contáctame",
+    "contact_me": "Contáctame",
     "name": "Nombre",
     "email": "Email",
     "message": "Mensaje",
@@ -59,5 +59,11 @@
         "mis_habilidades": "<h2>Mis habilidades</h2>\n <ul>\n<li>Osteopata por la escuela de osteopatia Gaia en Mallorca.</li>\n<li>Especialista en Osteopat&iacute;a infantil y visceral.</li>\n<li>Especializaci&oacute;n en reflexolog&iacute;a craneal, podal y neuromuscular.</li>\n<li>Formaci&oacute;n en terapia manual para el s&iacute;ndrome de dolor miofascial.</li>\n<li>Formaci&oacute;n en digitopresi&oacute;n para el tratamiento de artrosis.</li>\n<li>Especialista en tratamientos antiaging y rejuvenecimiento facial y corporal.</li>\n </ul>\n <h2>Idiomas</h2>\n <ul>\n<li>Castellano</li>\n<li>Ingl&eacute;s</li>\n<li>Italiano</li>\n </ul>",
         "filosofia": "<h2>Filosof&iacute;a</h2>\n <p>El descubrimiento de la belleza y perfecci&oacute;n del cuerpo humano fue el acontecimiento m&aacute;s importante de mi vida.</p>\n<p>Con la m&aacute;xima atenci&oacute;n y partiendo de las limitaciones personales y los problemas f&iacute;sicos que me acercaron a estos estudios, descubr&iacute; la belleza y la integridad de la osteopat&iacute;a, que con su visi&oacute;n integral del ser humano puede ayudarte a vivir y conocerte mejor. La disciplina del Yoga ha sido y es de gran ayuda y apoyo para m&iacute; y para ayudar a las personas a realizar estiramientos adecuados en casa, mejorando y prolongando los efectos positivos del trabajo de consulta y la salud de sus m&uacute;sculos.</p>",
         "intro": "Acerca de mi:"
+    },
+    "contact": {
+        "title": "Información de contacto",
+        "treatments_message": "Posibilidad de tratamientos a domicilio.",
+        "message_whatsapp": "Hola, me interesa tener más información sobre tus servicios..",
+        "mail_subject": "Contacto desde la página web de Osteorevolución.com"
     }
 }
