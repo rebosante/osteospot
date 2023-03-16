@@ -88,17 +88,21 @@ export default {
                 method: 'POST',
                 body: {
                     name: this.name,
-                    email: this.email,
+                    email: 'info@osteorevolucion.com',
                     subject: this.$t('contact.mail_subject'),
-                    message: this.message,
+                    message: this.message + " ++++ RECEIVED FROM ++++ " + this.email,
                 },
             }).then(() => {
                 this.errors = false;
                 this.success = true;
                 this.waiting = false;
-                this.name = "",
-                this.email = "",
-                this.message = ""
+                this.name = "";
+                this.email = "";
+                this.message = "";
+                this.nameError = "";
+                this.emailError = "";
+                this.messageError = "";
+                this.generalMessage = this.$t('contact.sent_succesfully');
             });
         },
         validateName() {

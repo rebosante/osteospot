@@ -12,6 +12,10 @@ Footer Gray Text:   #cccccc
 
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -394,7 +398,7 @@ nav {
   display: inline-block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .menu > li:nth-child(1) {
     transform: translateY(-5px);
     }
@@ -506,6 +510,22 @@ nav {
   }
 }
 
+@media (max-width: 992px) {
+  .menu.cf {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu.cf > li {
+    flex: 1 1 0;
+  }
+}
+
+@media (max-width: 665px) {
+  .menu.cf > li:last-of-type {
+    margin-top: .5rem;
+  }
+}
+
 @media (max-width: 540px) {
   .tm-block-brand-inner {
     flex-direction: column;
@@ -519,16 +539,6 @@ nav {
 
   .tm-contact-form {
     width: calc(100% - 20px);
-  }
-  .menu.cf {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .menu.cf > li {
-    flex: 1 1 0;
-  }
-  .menu.cf > li:last-of-type {
-    margin-top: .5rem;
   }
   .tm-hero-text, .tm-hero-text-titled, .tm-hero-text-titled .tm-hero-block {
     font-size: 16px;

@@ -17,6 +17,7 @@
     "@nuxtjs/axios": "^5.13.6",
     "nodemailer": "^6.9.1",
     "nuxt-mail": "^3.1.5",
-    "validator": "^13.9.0"
+    "validator": "^13.9.0",
+    "vue3-mq": "^3.1.3"
   }
 }

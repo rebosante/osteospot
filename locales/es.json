@@ -64,6 +64,7 @@
         "title": "Información de contacto",
         "treatments_message": "Posibilidad de tratamientos a domicilio.",
         "message_whatsapp": "Hola, me interesa tener más información sobre tus servicios..",
-        "mail_subject": "Contacto desde la página web de Osteorevolución.com"
+        "mail_subject": "Contacto desde la página web de Osteorevolución.com",
+        "sent_succesfully": "Tu mensaje ha sido enviado correctamente. Pronto me pondré en contacto"
     }
 }

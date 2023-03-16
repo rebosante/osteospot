@@ -6,7 +6,7 @@
                     <img class="tm-logo-brand" src="~/assets/images/logo.svg">
                 </div>
             </header>
-            <div v-html="$t('geriatric.intro_text')" />
+            <div id="intro-mobile" v-html="$t('geriatric.intro_text')" />
         </div>
         <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
             <img src="~/assets/images/image-04.jpg" alt="Image" class="tm-img-left">

@@ -27,3 +27,22 @@
         </nav> 
     </header>
 </template>
+<script setup>
+import { useMq } from "vue3-mq";
+import { watch, computed } from 'vue';
+import { useRoute } from 'vue-router';
+const mq = useMq();
+const route = useRoute();
+
+function jump(){
+    var url = location.href;               //Save down the URL without hash.
+    location.href = "#intro-mobile";                 //Go to the target element.
+    history.replaceState(null,null,url);   //Don't like hashes. Changing it back.
+}
+
+watch(() => route.name, () => {
+      if (mq.mdMinus) {
+        jump();
+      }
+    });
+</script>

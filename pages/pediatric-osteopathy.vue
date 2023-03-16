@@ -6,7 +6,7 @@
                     <img class="tm-logo-brand" src="~/assets/images/logo.svg">
                 </div>
             </header>
-            <div class="tm-hero-text-titled" v-html="$t('pediatric.craneo_sacral')" />
+            <div id="intro-mobile" class="tm-hero-text-titled" v-html="$t('pediatric.craneo_sacral')" />
         </div>
         <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
             <img src="~/assets/images/image-07.jpg" alt="Image" class="tm-img-left">
