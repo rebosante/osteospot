@@ -4,7 +4,7 @@ const config = useRuntimeConfig();
 const transporter = nodemailer.createTransport({
     host: config.MAILHOST,
     port: config.MAILPORT,
-    secure: config.MAILSECURE,
+    secure: true,
     auth: {
         user: config.MAILUSER,
         pass: config.MAILPASSWORD
@@ -13,6 +13,15 @@ const transporter = nodemailer.createTransport({
 export default defineEventHandler(async(event, response) => {
     try {
         const body = await readBody(event);
+
+        // verify connection configuration
+        await transporter.verify(function (error, success) {
+            if (error) {
+                console.log(error);
+            } else {
+                console.log("Server is ready to take our messages");
+            }
+        });
 
         await isValid(body).then(async (data) => {
             const mail = await transporter.sendMail({
