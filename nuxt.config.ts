@@ -19,11 +19,6 @@ const config: NuxtConfig = {
     head: {
       charset: 'utf-16',
       viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
-      titleTemplate: '%s -OsteoSpot by Annachiara',
-      meta: [
-        { hid: 'description', name: 'description', content: 'OsteoSpot by Annachiara, me enfoco en el tratamiento y prevención de múltiples problemas de salud. Tratamiento corporal completo para el bienestar del individuo.' },
-        { hid: 'keywords', name: 'keywords', content: 'osteospot, annachiara, osteópata, osteopatía, osteorevolucion, masajes, masajes a domicilio, reflexología, reflexología podal' }
-      ],
       link: [
         { rel: 'stylesheet', href: 'css/all.min.css' },
         { rel: 'stylesheet', href: 'css/tooplate-style.css' },

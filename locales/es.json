@@ -9,6 +9,11 @@
     "send": "Enviar",
     "read_more": "Ver más",
     "osteopathy": "osteopatía",
+    "metas": {
+        "title": "OsteoSpot by Annachiara",
+        "description": "OsteoSpot by Annachiara, me enfoco en el tratamiento y prevención de múltiples problemas de salud. Tratamiento corporal completo para el bienestar del individuo.",
+        "keywords": "osteospot, annachiara, osteópata, osteopatía, osteorevolucion, masajes, masajes a domicilio, reflexología, reflexología podal"
+    },
     "menu": {
         "home": "inicio",
         "treatments": "tratamientos",

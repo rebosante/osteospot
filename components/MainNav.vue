@@ -29,7 +29,7 @@
 </template>
 <script setup>
 import { useMq } from "vue3-mq";
-import { watch, computed } from 'vue';
+import { watch } from 'vue';
 import { useRoute } from 'vue-router';
 const mq = useMq();
 const route = useRoute();

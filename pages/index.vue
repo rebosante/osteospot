@@ -39,12 +39,9 @@
                 <!-- -->
             </div>
         </div>
-
         <div class="item" data-desktop-seq-no="8" data-mobile-seq-no="6">
             <img src="~/assets/images/image-03.jpg" alt="Image">
         </div>
-
         <Contact />
-
     </main>
 </template>
