@@ -22,9 +22,9 @@ export default defineEventHandler(async(event, response) => {
                 text: data.message, 
                 html: data.message
             });
-            console.log('Message sent: %s', mail.messageId);
-            console.log('Preview URL: %s', nodemailer.
-            getTestMessageUrl(mail));
+            // console.log('Message sent: %s', mail.messageId);
+            // console.log('Preview URL: %s', nodemailer.
+            // getTestMessageUrl(mail));
             return Promise.resolve();
         })
         .catch((errors) => {

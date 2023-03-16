@@ -72,6 +72,8 @@ export default {
     },
     methods: {
         async submitForm() {
+            const newURL = window.location.protocol + "//" + window.location.host
+            // console.log(newURL + '/api/contact');
             // handle form submission
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!this.name.trim() || !emailRegex.test(this.email) || !this.message.trim()) {
@@ -82,7 +84,7 @@ export default {
             console.log('send mail here!');
             // Send email using nuxt-mail
             this.waiting = true;
-            await $fetch('http://localhost:3000/api/contact', {
+            await $fetch(newURL + '/api/contact', {
                 method: 'POST',
                 body: {
                     name: this.name,
