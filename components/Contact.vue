@@ -25,7 +25,7 @@
                     <span v-if="generalMessage" class="error">{{ generalMessage }}</span>
                 </div>
                 <div class="tm-text-right">
-                    <button type="submit" class="tm-btn tm-btn-secondary tm-btn-pad-big">Send</button>
+                    <button type="submit" class="tm-btn tm-btn-secondary tm-btn-pad-big">{{ $t('send') }}</button>
                 </div>
             </form>
         </div>
@@ -62,7 +62,8 @@ export default {
             generalMessage: "",
             waiting: false,
             success: false,
-            errors: false
+            errors: false,
+            checkFields: false
         };
     },
     computed: {
@@ -72,7 +73,8 @@ export default {
     },
     methods: {
         async submitForm() {
-            const newURL = window.location.protocol + "//" + window.location.host
+            const newURL = window.location.protocol + "//" + window.location.host;
+            this.checkFields = true;
             // console.log(newURL + '/api/contact');
             // handle form submission
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -93,6 +95,7 @@ export default {
                     message: this.message + " ++++ RECEIVED FROM ++++ " + this.email,
                 },
             }).then(() => {
+                this.checkFields = false;
                 this.errors = false;
                 this.success = true;
                 this.waiting = false;
@@ -138,13 +141,13 @@ export default {
     },
     watch: {
         name() {
-            this.validateName();
+            if (this.checkFields) this.validateName();
         },
         email() {
-            this.validateEmail();
+            if (this.checkFields) this.validateEmail();
         },
         message() {
-            this.validateMessage();
+            if (this.checkFields) this.validateMessage();
         },
     },
 };

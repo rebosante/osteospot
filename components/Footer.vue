@@ -3,7 +3,9 @@
         <img src="~/assets/images/qr-link-tooplate.png" alt="QR Code" class="tm-img-qr">
         <div>
             <p class="tm-mb-small" v-html="$t('home.copyright')" />
-            <p v-html="$t('home.made_by')" />
+            <p>
+                Built by <a href='https://mixapolis.com' rel='nofollow' target='_blank'><strong>Jay</strong></a>
+            </p>
         </div>
     </div>
 </template>

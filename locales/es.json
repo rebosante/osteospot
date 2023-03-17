@@ -1,5 +1,4 @@
 {
-    "hello": "Hola, soy {name}...",
     "call_me": "Llámame al +34 666 795 883",
     "language": "Language",
     "contact_me": "Contáctame",
@@ -33,8 +32,7 @@
         "reason": "El organismo es una unidad indivisible, que realiza diversas funciones gracias al trabajo conjunto de sus distintas partes. En el caso de existir un trastorno funcional de alguna de éstas, la reacción en cadena de las estructuras que se relacionan con ella resulta inevitable. Esta interdependencia lleva al osteópata a buscar desarreglos a distancia.",
         "history_brief": "La Medicina osteopática se da a conocer en 1874, tras décadas de estudio e investigación del Dr. A.T. Still, médico de iniciación alopática, que dedicó su vida a integrar una nueva corriente terapéutica basada en la estimulación de los sistemas curativos que posee el propio cuerpo.",
         "history_title": "Realidad histórica",
-        "copyright": "&copy; Annachiara Villa 2023",
-        "made_by": "Built by <a href='https://mixapolis.com' rel='nofollow' target='_blank'><strong>Jay</strong></a>"
+        "copyright": "&copy; Annachiara Villa 2023"
     },
     "treatments": {
         "intro_text": "Osteopatía - Reflexología - Cráneo Sacral",
