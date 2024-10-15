@@ -41,8 +41,7 @@
                     <li> <a :href="getLinkWhastapp('+34666795883', $t('contact.message_whatsapp'))" target="_blank">Whatsapp</a> </li>
                 </ul>
                 <p>Carrer del Deganat 2</p>
-                <p>Carrer d'Eivissa 3 A</p>
-                <p>Calle Bonaire, 16 &ndash; 1&ordm;</p>
+                <p>Carrer Pere d'Alc&agrave;ntara Penya, 16, 07006. Palma, Illes Balears</p>
                 <p><strong> {{ $t('contact.treatments_message') }} </strong></p>
                 <a href="tel:+34666795883">{{ $t('call_me') }}</a>
             </div>
