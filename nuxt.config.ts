@@ -23,6 +23,21 @@ const config: NuxtConfig = {
         { rel: 'stylesheet', href: 'css/all.min.css' },
         { rel: 'stylesheet', href: 'css/tooplate-style.css' },
         { rel: 'stylesheet', href: 'css/annachiara-custom.css' },
+      ],
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-CBE1SBBVC4',
+          async: true
+        },
+        {
+          children: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CBE1SBBVC4');
+          `,
+          type: 'text/javascript'
+        }
       ]
     }
   },
