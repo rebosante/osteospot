@@ -37,7 +37,8 @@ pnpm preview
 
 - Node version: `24.18.0` (configured in `netlify.toml`)
 - Build command: `pnpm build`
-- Publish directory: `.output/public`
+- Publish directory: `dist` (Nitro Netlify preset; not `.output/public`)
+- Set `PNPM_FLAGS=--shamefully-hoist` in Netlify if not using `netlify.toml`
 - Server API env vars: `MAILHOST`, `MAILPORT`, `MAILUSER`, `MAILPASSWORD`, `CONTACTMAIL`
 
 ## Stack
