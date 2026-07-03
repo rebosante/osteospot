@@ -1,42 +1,47 @@
-# Nuxt 3 Minimal Starter
+# OsteoSpot
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Marketing website for Annachiara Villa (osteopath, Palma de Mallorca).
+
+## Requirements
+
+- **Node.js** `24.18.0` (see `.nvmrc`)
+- **pnpm** (recommended package manager)
+
+```bash
+nvm use
+node -v   # should print v24.18.0
+```
 
 ## Setup
 
-Make sure to install the dependencies:
-
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
 pnpm install --shamefully-hoist
 ```
 
-## Development Server
-
-Start the development server on http://localhost:3000
+## Development
 
 ```bash
-npm run dev
+pnpm dev
 ```
+
+Open http://localhost:3000
 
 ## Production
 
-Build the application for production:
-
 ```bash
-npm run build
+pnpm build
+pnpm preview
 ```
 
-Locally preview production build:
+## Deployment (Netlify)
 
-```bash
-npm run preview
-```
+- Node version: `24.18.0` (configured in `netlify.toml`)
+- Build command: `pnpm build`
+- Publish directory: `.output/public`
+- Server API env vars: `MAILHOST`, `MAILPORT`, `MAILUSER`, `MAILPASSWORD`, `CONTACTMAIL`
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Stack
+
+- Nuxt 3.21.x, Vue 3, Nitro
+- i18n: vue-i18n (locales `es`, `en`)
+- Contact form: `POST /api/contact` (nodemailer)

@@ -1,17 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 import { resolve, dirname } from 'node:path'
-import { fileURLToPath } from 'url'
+import { fileURLToPath } from 'node:url'
 import VueI18nVitePlugin from '@intlify/unplugin-vue-i18n/vite'
-import { NuxtConfig } from '@nuxt/types'
 
-const config: NuxtConfig = {
+export default defineNuxtConfig({
+  build: {
+    transpile: ['vue-i18n']
+  },
   vite: {
     plugins: [
       VueI18nVitePlugin({
         include: [
           resolve(dirname(fileURLToPath(import.meta.url)), './locales/*.json')
-        ]
+        ],
+        strictMessage: false
       })
     ]
   },
@@ -30,7 +33,7 @@ const config: NuxtConfig = {
           async: true
         },
         {
-          children: `
+          innerHTML: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -48,18 +51,4 @@ const config: NuxtConfig = {
     MAILPASSWORD: process.env.MAILPASSWORD,
     CONTACTMAIL: process.env.CONTACTMAIL
   }
-  /* mail: {
-    smtp: {
-      host: process.env.MAIL_HOST,
-      port: process.env.MAIL_PORT,
-      secure: process.env.MAIL_SECURE === 'true',
-      auth: {
-        user: process.env.MAIL_USER,
-        pass: process.env.MAIL_PASS
-      }
-    },
-    from: process.env.MAIL_FROM,
-  } */
-}
-
-export default config
+})
