@@ -8,9 +8,8 @@
 <script>
 export default {
     data: () => ({
-        callAdjustLayout: () => ({}),
-        currentLayout: 'desktop',
-        nextLayout: 'desktop'
+        callAdjustLayout: null,
+        currentLayout: null
     }),
     mounted() {
         if (this.detectIE()) {
@@ -23,54 +22,47 @@ export default {
         window.removeEventListener('resize', this.adjustLayoutWithDelay);
     },
     watch: {
-        $route(to, from) {
+        $route() {
+            // New page has its own blocks; force a reorder pass.
+            this.currentLayout = null;
             this.adjustLayoutWithDelay();
         }
     },
     methods: {
         adjustLayout() {
-            let block1, block2, block3, block4, block5, block6, block7, block8, block9;
-            this.currentLayout = 'desktop';
-            this.nextLayout = 'desktop';
+            const nextLayout = window.innerWidth <= 1199 ? 'mobile' : 'desktop';
 
-            if (window.innerWidth <= 1199) {
-                // Mobile layout
-                this.nextLayout = "mobile";
-                block1 = document.querySelector("div[data-mobile-seq-no='1']");
-                block2 = document.querySelector("div[data-mobile-seq-no='2']");
-                block3 = document.querySelector("div[data-mobile-seq-no='3']");
-                block4 = document.querySelector("div[data-mobile-seq-no='4']");
-                block5 = document.querySelector("div[data-mobile-seq-no='5']");
-                block6 = document.querySelector("div[data-mobile-seq-no='6']");
-                block7 = document.querySelector("div[data-mobile-seq-no='7']");
-                block8 = document.querySelector("div[data-mobile-seq-no='8']");
-                block9 = document.querySelector("div[data-mobile-seq-no='9']");
-            } else {
-                // Desktop layout
-                this.nextLayout = "desktop";
-                block1 = document.querySelector("div[data-desktop-seq-no='1']");
-                block2 = document.querySelector("div[data-desktop-seq-no='2']");
-                block3 = document.querySelector("div[data-desktop-seq-no='3']");
-                block4 = document.querySelector("div[data-desktop-seq-no='4']");
-                block5 = document.querySelector("div[data-desktop-seq-no='5']");
-                block6 = document.querySelector("div[data-desktop-seq-no='6']");
-                block7 = document.querySelector("div[data-desktop-seq-no='7']");
-                block8 = document.querySelector("div[data-desktop-seq-no='8']");
-                block9 = document.querySelector("div[data-desktop-seq-no='9']");
+            // Mobile keyboards fire resize (height changes). Reordering DOM then
+            // steals focus and dismisses the keyboard — only reorder on real layout switches.
+            if (nextLayout === this.currentLayout) {
+                return;
             }
 
-            if (this.nextLayout !== this.currentLayout) {
-                // Reorder blocks based on their seq no
-                block2.parentNode.insertBefore(block2, block1.nextSibling);
-                block3.parentNode.insertBefore(block3, block2.nextSibling);
-                block4.parentNode.insertBefore(block4, block3.nextSibling);
-                block5.parentNode.insertBefore(block5, block4.nextSibling);
-                block6.parentNode.insertBefore(block6, block5.nextSibling);
-                block7.parentNode.insertBefore(block7, block6.nextSibling);
-                block8.parentNode.insertBefore(block8, block7.nextSibling);
-                block9.parentNode.insertBefore(block9, block8.nextSibling);
-                this.currentLayout = this.nextLayout;
+            const seqAttr = nextLayout === 'mobile' ? 'data-mobile-seq-no' : 'data-desktop-seq-no';
+            const block1 = document.querySelector(`div[${seqAttr}='1']`);
+            const block2 = document.querySelector(`div[${seqAttr}='2']`);
+            const block3 = document.querySelector(`div[${seqAttr}='3']`);
+            const block4 = document.querySelector(`div[${seqAttr}='4']`);
+            const block5 = document.querySelector(`div[${seqAttr}='5']`);
+            const block6 = document.querySelector(`div[${seqAttr}='6']`);
+            const block7 = document.querySelector(`div[${seqAttr}='7']`);
+            const block8 = document.querySelector(`div[${seqAttr}='8']`);
+            const block9 = document.querySelector(`div[${seqAttr}='9']`);
+
+            if (!block1?.parentNode || !block2 || !block3 || !block4 || !block5 || !block6 || !block7 || !block8 || !block9) {
+                return;
             }
+
+            // Reorder blocks based on their seq no
+            block1.parentNode.insertBefore(block2, block1.nextSibling);
+            block1.parentNode.insertBefore(block3, block2.nextSibling);
+            block1.parentNode.insertBefore(block4, block3.nextSibling);
+            block1.parentNode.insertBefore(block5, block4.nextSibling);
+            block1.parentNode.insertBefore(block6, block5.nextSibling);
+            block1.parentNode.insertBefore(block7, block6.nextSibling);
+            block1.parentNode.insertBefore(block8, block7.nextSibling);
+            block1.parentNode.insertBefore(block9, block8.nextSibling);
+            this.currentLayout = nextLayout;
         },
         adjustLayoutWithDelay() {
             clearTimeout(this.callAdjustLayout);

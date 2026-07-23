@@ -8,21 +8,22 @@
             </header>
             <form @submit.prevent="submitForm" class="tm-contact-form">
                 <div class="tm-form-group">
-                    <input v-model.trim="name" type="text" id="contact_name" name="contact_name" class="form-control"
+                    <input v-model="name" type="text" id="contact_name" name="contact_name" class="form-control"
                         placeholder="Name">
                     <span v-if="nameError" class="error">{{ nameError }}</span>
                 </div>
                 <div class="tm-form-group">
-                    <input v-model.trim="email" type="email" id="contact_email" name="contact_email" class="form-control"
+                    <input v-model="email" type="email" id="contact_email" name="contact_email" class="form-control"
                         placeholder="Email">
                     <span v-if="emailError" class="error">{{ emailError }}</span>
                 </div>
                 <div class="tm-form-group">
-                    <textarea v-model.trim="message" rows="5" id="contact_message" name="contact_message"
+                    <textarea v-model="message" rows="5" id="contact_message" name="contact_message"
                         class="form-control" placeholder="Message"></textarea>
                     <span v-if="messageError" class="error">{{ messageError }}</span>
-                    <br v-if="generalMessage">
+                    <br v-if="generalMessage || successMessage">
                     <span v-if="generalMessage" class="error">{{ generalMessage }}</span>
+                    <span v-if="successMessage" class="success">{{ successMessage }}</span>
                 </div>
                 <div class="tm-text-right">
                     <button type="submit" class="tm-btn tm-btn-secondary tm-btn-pad-big">{{ $t('send') }}</button>
@@ -58,6 +59,8 @@ export default {
             emailError: "",
             messageError: "",
             generalMessage: "",
+            successMessage: "",
+            successMessageTimer: null,
             waiting: false,
             success: false,
             errors: false,
@@ -69,28 +72,38 @@ export default {
             return this.nameError || this.emailError || this.messageError || this.generalMessage;
         },
     },
+    beforeUnmount() {
+        clearTimeout(this.successMessageTimer);
+    },
     methods: {
+        showSuccessMessage() {
+            clearTimeout(this.successMessageTimer);
+            this.successMessage = this.$t('contact.sent_succesfully');
+            this.successMessageTimer = setTimeout(() => {
+                this.successMessage = "";
+                this.successMessageTimer = null;
+            }, 30000);
+        },
         async submitForm() {
             const newURL = window.location.protocol + "//" + window.location.host;
             this.checkFields = true;
-            // console.log(newURL + '/api/contact');
-            // handle form submission
+            const name = this.name.trim();
+            const email = this.email.trim();
+            const message = this.message.trim();
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!this.name.trim() || !emailRegex.test(this.email) || !this.message.trim()) {
+            if (!name || !emailRegex.test(email) || !message) {
                 this.generalMessage = "Please fill all fields";
                 return
             }
             this.generalMessage = "";
-            console.log('send mail here!');
-            // Send email using nuxt-mail
             this.waiting = true;
             await $fetch(newURL + '/api/contact', {
                 method: 'POST',
                 body: {
-                    name: this.name,
+                    name,
                     email: 'info@osteorevolucion.com',
                     subject: this.$t('contact.mail_subject'),
-                    message: this.message + " ++++ RECEIVED FROM ++++ " + this.email,
+                    message: message + " ++++ RECEIVED FROM ++++ " + email,
                 },
             }).then(() => {
                 this.checkFields = false;
@@ -103,7 +116,7 @@ export default {
                 this.nameError = "";
                 this.emailError = "";
                 this.messageError = "";
-                this.generalMessage = this.$t('contact.sent_succesfully');
+                this.showSuccessMessage();
             });
         },
         validateName() {
@@ -115,7 +128,7 @@ export default {
         },
         validateEmail() {
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(this.email)) {
+            if (!emailRegex.test(this.email.trim())) {
                 this.emailError = "Please enter a valid email address";
             } else {
                 this.emailError = "";
@@ -139,19 +152,28 @@ export default {
     },
     watch: {
         name() {
+            if (this.generalMessage) this.generalMessage = "";
             if (this.checkFields) this.validateName();
         },
         email() {
+            if (this.generalMessage) this.generalMessage = "";
             if (this.checkFields) this.validateEmail();
         },
         message() {
+            if (this.generalMessage) this.generalMessage = "";
             if (this.checkFields) this.validateMessage();
         },
     },
 };
 </script>
 
-<style scoped lang="css">.error {
+<style scoped lang="css">
+.error {
     color: red;
     font-size: 14px;
-}</style>
+}
+.success {
+    color: #2e7d32;
+    font-size: 14px;
+}
+</style>
