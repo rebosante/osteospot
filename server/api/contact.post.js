@@ -1,52 +1,44 @@
 import nodemailer from 'nodemailer';
 import validator from 'validator';
+
 const config = useRuntimeConfig();
+const mailPort = Number(config.MAILPORT);
+// true = implicit TLS (port 465, e.g. DreamHost); false = STARTTLS (port 587, e.g. Ethereal)
+const mailSecure = config.MAILSECURE === true || config.MAILSECURE === 'true';
+
 const transporter = nodemailer.createTransport({
     host: config.MAILHOST,
-    port: config.MAILPORT,
-    secure: true,
+    port: mailPort,
+    secure: mailSecure,
+    requireTLS: !mailSecure,
     auth: {
         user: config.MAILUSER,
         pass: config.MAILPASSWORD
     }
 });
-export default defineEventHandler(async(event, response) => {
+
+export default defineEventHandler(async (event) => {
     try {
         const body = await readBody(event);
+        const data = await isValid(body);
 
-        // verify connection configuration
-        await transporter.verify(function (error, success) {
-            if (error) {
-                console.log(error);
-            } else {
-                console.log("Server is ready to take our messages");
-            }
+        await transporter.verify();
+
+        await transporter.sendMail({
+            from: `"${data.name}" <${data.email}>`,
+            to: config.CONTACTMAIL,
+            subject: data.subject,
+            text: data.message,
+            html: data.message
         });
 
-        await isValid(body).then(async (data) => {
-            const mail = await transporter.sendMail({
-                from: `"${data.name}" <${data.email}>`, 
-                to: config.CONTACTMAIL, 
-                subject: data.subject, 
-                text: data.message, 
-                html: data.message
-            });
-            // console.log('Message sent: %s', mail.messageId);
-            // console.log('Preview URL: %s', nodemailer.
-            // getTestMessageUrl(mail));
-            return Promise.resolve();
-        })
-        .catch((errors) => {
-            return Promise.reject(errors);
-        })
         return 'success';
-    }
-    catch (error) {
-        sendError(event, createError({
+    } catch (error) {
+        throw createError({
             statusCode: 400,
             statusMessage: 'Validation failed',
             data: error
-        }))
+        });
     }
 });
 

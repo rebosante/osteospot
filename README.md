@@ -39,7 +39,9 @@ pnpm preview
 - Build command: `pnpm build`
 - Publish directory: `dist` (Nitro Netlify preset; not `.output/public`)
 - Set `PNPM_FLAGS=--shamefully-hoist` in Netlify if not using `netlify.toml`
-- Server API env vars: `MAILHOST`, `MAILPORT`, `MAILUSER`, `MAILPASSWORD`, `CONTACTMAIL`
+- Server API env vars: `MAILHOST`, `MAILPORT`, `MAILSECURE`, `MAILUSER`, `MAILPASSWORD`, `CONTACTMAIL`
+  - Ethereal (local): port `587`, `MAILSECURE=false`
+  - DreamHost (prod): port `465`, `MAILSECURE=true`
 
 ## Stack
 

@@ -15,9 +15,7 @@
         </div>
         <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2" data-desktop-seq-no="3"
             data-mobile-seq-no="5">
-            <p>
-              {{ $t('home.reason') }}
-            </p>
+            <div v-html="$t('home.reason')" />
             <ReadMore />
         </div>
         <div class="item" data-desktop-seq-no="4" data-mobile-seq-no="8">

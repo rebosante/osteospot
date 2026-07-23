@@ -40,8 +40,7 @@
                     <li> <a href="https://www.facebook.com/annachiara.osteospot" target="_blank">Facebook</a> </li>
                     <li> <a :href="getLinkWhastapp('+34666795883', $t('contact.message_whatsapp'))" target="_blank">Whatsapp</a> </li>
                 </ul>
-                <p>Carrer del Deganat 2</p>
-                <p>Carrer Pere d'Alc&agrave;ntara Penya, 16, 07006. Palma, Illes Balears</p>
+                <p>Carrer de Tous i Maroto, 12, Centre, 07001 Palma, Illes Balears</p>
                 <p><strong> {{ $t('contact.treatments_message') }} </strong></p>
                 <a href="tel:+34666795883">{{ $t('call_me') }}</a>
             </div>

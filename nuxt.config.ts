@@ -44,9 +44,16 @@ export default defineNuxtConfig({
       ]
     }
   },
+  // Skip macOS AppleDouble junk on non-APFS volumes (e.g. /Volumes/...)
+  ignore: ['**/._*'],
+  nitro: {
+    ignore: ['**/._*']
+  },
   runtimeConfig: {
     MAILHOST: process.env.MAILHOST,
     MAILPORT: process.env.MAILPORT,
+    // true for port 465 (DreamHost); false for port 587 STARTTLS (Ethereal)
+    MAILSECURE: process.env.MAILSECURE === 'true',
     MAILUSER: process.env.MAILUSER,
     MAILPASSWORD: process.env.MAILPASSWORD,
     CONTACTMAIL: process.env.CONTACTMAIL
