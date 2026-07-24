@@ -42,6 +42,10 @@
                     <li> <a :href="getLinkWhastapp('+34666795883', $t('contact.message_whatsapp'))" target="_blank">Whatsapp</a> </li>
                 </ul>
                 <p>Carrer de Tous i Maroto, 12, Centre, 07001 Palma, Illes Balears</p>
+                <!-- insert google map here with the address and the link to the google maps -->
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.6986500000003!2d1.267736076104013!3d39.56960947945679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12978975d6422573%3A0x6810950412796a3!2sCarrer%20de%20Tous%20i%20Maroto%2C%2012%2C%20Centre%2C%2007001%20Palma%2C%20Illes%20Balears!5e0!3m2!1ses!2ses!4v1758702400000!5m2!1ses!2ses" style="border:0; width: 100%; height: 350px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
                 <p><strong> {{ $t('contact.treatments_message') }} </strong></p>
                 <a href="tel:+34666795883">{{ $t('call_me') }}</a>
             </div>
